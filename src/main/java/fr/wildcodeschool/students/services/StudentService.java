@@ -6,5 +6,5 @@ import fr.wildcodeschool.students.models.Student;
 
 public interface StudentService {
 
-	List<Student> students();
+	List<Student> studentsList();
 }

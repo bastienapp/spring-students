@@ -11,7 +11,7 @@ import fr.wildcodeschool.students.models.Student;
 public class StudentServiceImplBdx implements StudentService {
 
 	@Override
-	public List<Student> students() {
+	public List<Student> studentsList() {
 		List<Student> students = new ArrayList<>();
 		students.add(new Student("Stan"));
 		students.add(new Student("Kyle"));

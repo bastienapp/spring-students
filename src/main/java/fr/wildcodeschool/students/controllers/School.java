@@ -17,6 +17,6 @@ public class School {
 	private StudentService studentService;
  
     public List<Student> getStudents(){
-        return studentService.students();
+        return studentService.studentsList();
     }
 }
