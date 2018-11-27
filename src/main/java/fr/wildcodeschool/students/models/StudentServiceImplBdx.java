@@ -1,13 +1,11 @@
-package fr.wildcodeschool.students.services;
+package fr.wildcodeschool.students.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-import fr.wildcodeschool.students.models.Student;
-
-@Service
+@Component
 public class StudentServiceImplBdx implements StudentService {
 
 	@Override

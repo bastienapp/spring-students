@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 import fr.wildcodeschool.students.models.Student;
-import fr.wildcodeschool.students.services.StudentService;
+import fr.wildcodeschool.students.models.StudentService;
 
-@Controller
+@Component
 public class School {
 	
 	@Autowired
