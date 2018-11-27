@@ -6,15 +6,13 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StudentServiceImplTls implements StudentService {
-
-	@Override
-	public List<Student> studentsList() {
+public class School {
+ 
+    public List<Student> getStudents(){
 		List<Student> students = new ArrayList<>();
 		students.add(new Student("Bernard"));
 		students.add(new Student("Hoagie"));
 		students.add(new Student("Laverne"));
 		return students;
-	}
-
+    }
 }

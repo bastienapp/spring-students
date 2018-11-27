@@ -2,6 +2,7 @@ package fr.wildcodeschool.students.controllers;
 
 import org.springframework.context.ApplicationContext;
 
+import fr.wildcodeschool.students.models.School;
 import fr.wildcodeschool.students.models.Student;
 
 public class App {
