@@ -18,7 +18,7 @@ Afin d'afficher une autre liste, il faudrait créer des méthodes différentes, 
 
 Afin d'améliorer le code existant et retirer le couplage fort, tu vas utiliser l'injection de dépendance.
 
-* `Student` devra implémenter une nouvelle interface `StudentService`, qui possèdera la méthode `studentsList` qui retournera `List<Student>`.
+* Il faudra créer une nouvelle interface `StudentService`, qui possèdera la méthode `studentsList` qui retournera `List<Student>`.
 * `StudentService` devra posséder une nouvelle implémentation `StudentServiceImplTls`, qui retournera une liste d'étudiants Toulousains (celle qui était précédemment dans la classe `School`).
 * `School` deva récupérer sa liste d'étudiant à partir de `StudentService`, par injection de dépendance.
 
