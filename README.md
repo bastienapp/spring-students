@@ -23,6 +23,7 @@ Afin d'améliorer le code existant et retirer le couplage fort, tu vas utiliser 
 * `School` deva récupérer sa liste d'étudiant à partir de `StudentService`, par injection de dépendance.
 
 > Attention, tu devras parfois utiliser @Component
+> Tu  n'auras pas à créer de fichier *.xml* ni à modifier les fichier dans le package `controllers`
 
 ## 3 - Plusieurs implémentations
 
