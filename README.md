@@ -21,16 +21,13 @@ Afin d'afficher une autre liste, il faudrait créer des méthodes différentes, 
 Afin d'améliorer le code existant et retirer le couplage fort, tu utiliseras l'injection de dépendance :
 
 * Il te faudra créer une nouvelle interface `StudentDao`, qui possèdera  la signature de la méthode `findAll()`, qui retournera `List<Student>`.
-* `StudentDao` devra posséder une nouvelle implémentation `StudentRepositoryTls`, qui retournera une liste d'étudiants Toulousains (celle qui était précédemment dans la classe `StudentController`).
-* Il te faudra créer une classe `StudentService`, qui récupèrera la liste d'étudiants à partir de l'implémentation `StudentRepositoryTls`, par injection de dépendance.
-* `StudentController` récupérera la liste d'étudiants à partir de `StudentService`, par injection de dépendance.
-
-> Attention, tu devras parfois utiliser les annotations @Component (ou @Repository) et @Service
+* `StudentDao` devra posséder une nouvelle implémentation `StudentRepoTls`, qui retournera une liste d'étudiants Toulousains (celle qui était précédemment dans la classe `StudentController`).
+* `StudentController` récupérera la liste d'étudiants à partir de `StudentRepoTls`, par injection de dépendance.
 
 > Tu n'auras pas à créer de fichier *.xml* dans ce projet
 
 ## 3 - Plusieurs implémentations
 
-Une fois que cela fonctionne, crée une seconde implémentation de `StudentDao` nommée `StudentRepositoryBdx`, qui retourne une liste d'étudiants Bordelais.
+Une fois que cela fonctionne, crée une seconde implémentation de `StudentDao` nommée `StudentRepoBdx`, qui retourne une liste d'étudiants Bordelais.
 
 Faire en sorte qu'on puisse changer la liste d'étudiant en fonction de l'implémentation choisie, grâce à `@Qualifier` ou un fichier `applicationContext.xml`.
